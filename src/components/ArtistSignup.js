@@ -28,7 +28,7 @@ export class ArtistSignup extends Component {
   signupForm = () => {
     // console.log("STATE", this.state);
     return (
-      <Form inverted onSubmit={this.handleSubmit}>
+      <Form id="artis-signup-form" inverted onSubmit={this.handleSubmit}>
     <Form.Field>
       <Input transparent icon='mail outline' iconPosition='left' size='huge' placeholder='Email' value={this.state.email} name="email" onChange={(event) => this.handleFormChange("email", event)}/>
     </Form.Field>

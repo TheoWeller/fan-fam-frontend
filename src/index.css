@@ -131,6 +131,11 @@ LOGIN STYLING
   margin-bottom: 3%;
 }
 
+#artis-signup-form input{
+  color: black !important;
+}
+
+
 #login-form{
   padding-top: 10%;
 }
