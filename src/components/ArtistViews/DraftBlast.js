@@ -78,6 +78,7 @@ class DraftBlast extends Component {
           if(data.deliveryStatus == "Success"){
             this.setState( { ...this.state, blastConfirmation: true, textBlastSent: true, blastData: data.smsStatus } )
           } else if(data.deliveryStatus == "Error") {
+            console.log("BLATS ERRORR DATA", data);
             this.setState( { ...this.state, blastConfirmation: true, textBlastSent: true, blastData: "Error: No messages delivered" } )
           }
         })
