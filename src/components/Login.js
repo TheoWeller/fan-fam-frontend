@@ -23,6 +23,7 @@ class Login extends Component {
   dispatchLogin = () => {
     this.props.fetchArtistCreate(login(this.state.email, this.state.password))
       .then(data => {
+        console.log("LOGIN DATA", data);
         if (data.errors) {
           alert('please enter the right info')
         } else {
