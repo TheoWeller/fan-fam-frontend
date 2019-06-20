@@ -27,7 +27,7 @@ FETCHES
 export const postToArtistCreate = (credentials, loginOrSignup) => {
   return (dispatch) => {
     dispatch( { type: "LOADING" } );
-    return fetch(`http://localhost:3000/api/v1/artist/${loginOrSignup}`, {
+    return fetch(`http://fan-fam-backend.herokuapp.com/api/v1/artist/${loginOrSignup}`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

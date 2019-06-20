@@ -8,7 +8,7 @@ class Settings extends Component {
   state = {email: "", username: "", password: "", phone: "", newPassword: ""}
 
   componentDidMount(){
-    fetch('http://localhost:3000/api/v1/artist/settings', {
+    fetch('http://fan-fam-backend.herokuapp.com/api/v1/artist/settings', {
       headers: {
         Authenticate: this.props.currentUserToken
       }

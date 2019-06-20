@@ -7,7 +7,7 @@ export const postToSubscriptionCreate = (credentials) => {
 
   return (dispatch) => {
       dispatch( { type: "SUBSCRIPTION_LOADING" } );
-      return fetch(`http://localhost:3000/api/v1/subscribe`, {
+      return fetch(`http://fan-fam-backend.herokuapp.com/api/v1/subscribe`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -34,7 +34,7 @@ export const postToSubscriptionCreate = (credentials) => {
 export const updateSubscriptionProps = (props) => {
   return (dispatch) => {
       dispatch( { type: "SUBSCRIPTION_LOADING" } );
-      return fetch(`http://localhost:3000/api/v1/subscribe/update`, {
+      return fetch(`http://fan-fam-backend.herokuapp.com/api/v1/subscribe/update`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

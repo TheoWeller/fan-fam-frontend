@@ -5,7 +5,7 @@ FETCH
 export const postToBlastCreate = (blastContent, route) => {
   return (dispatch) => {
       dispatch( { type: "BLAST_PENDING" } );
-      return fetch(`http://localhost:3000/api/v1/blast/${route}`, {
+      return fetch(`http://fan-fam-backend.herokuapp.com/api/v1/blast/${route}`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

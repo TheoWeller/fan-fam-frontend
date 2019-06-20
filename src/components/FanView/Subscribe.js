@@ -20,7 +20,7 @@ class Subscribe extends Component {
   }
 
   fetchArtistShowPage = (slug) => {
-    fetch(`http://localhost:3000/api/v1/subscribe/${slug}`)
+    fetch(`http://fan-fam-backend.herokuapp.com/api/v1/subscribe/${slug}`)
     .then(r => r.json())
     .then(data => {
       this.setState({...this.state, payload: data.payload})
