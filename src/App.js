@@ -56,8 +56,8 @@ class App extends Component {
       this.setState({unAuthenticated: true})
     }
   }
-  console.log("PROPPPPPSSS", this.props);
   render(){
+    console.log("PROPPPPPSSS", this.props);
     //TODO: Fix route
     // console.log("CURRENT USER IN APP.JS", this.props);
     if (this.props.doneLoading || this.state.unAuthenticated) {
