@@ -70,7 +70,7 @@ class Subscribe extends Component {
   }
 
   render (){
-    const url = `http://localhost:3001/subscribe/${this.state.slug}`//FOR COMPYING TO CLIPBOARD
+    const url = `http://fan-fam-backend.herokuapp.com/subscribe/${this.state.slug}`//FOR COMPYING TO CLIPBOARD
     console.log("ARRTIST-SUB", this.state);
     return (
       <Fragment>

@@ -27,7 +27,7 @@ class FanbaseStats extends Component {
    }
 
   render(){
-    const url = `http://localhost:3001/subscribe/${this.props.slug}`//FOR COMPYING TO CLIPBOARD
+    const url = `http://fan-fam-backend.herokuapp.com/subscribe/${this.props.slug}`//FOR COMPYING TO CLIPBOARD
     return (
       <div id="fanbase-stats">
         <Grid centered divided inverted columns='equal'>
