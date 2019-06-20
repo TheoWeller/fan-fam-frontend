@@ -88,7 +88,7 @@ class Subscribe extends Component {
                 onChange={(event) => this.handleFormChange("title", event)}/>
               </Form.Field>
               <Form.Field>
-                <Input transparent value={this.state.slug} placeholder='Enter custom url'name="password" label='http://localhost:3001/subscribe/'  onChange={(event) => this.handleFormChange("slug", event)}/>
+                <Input transparent value={this.state.slug} placeholder='Enter custom url'name="password" label='http://fan-fam-backend.herokuapp.com/subscribe/'  onChange={(event) => this.handleFormChange("slug", event)}/>
               </Form.Field>
               <Segment textAlign='center' id="header-edit-segment">
                 <Button
@@ -122,7 +122,7 @@ class Subscribe extends Component {
             data-clipboard-action="copy"
             onClick={() => this.copySubscriptionLink}
           >
-            <Button.Content visible>{`http://localhost:3001/subscribe/${this.props.slug}`}</Button.Content>
+            <Button.Content visible>{`http://fan-fam-backend.herokuapp.com/subscribe/${this.props.slug}`}</Button.Content>
             <Button.Content hidden>Click to copy...</Button.Content>
           <Icon name='copy'/>
           </Button>
