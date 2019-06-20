@@ -67,7 +67,7 @@ class App extends Component {
           <Route exact path='/' component={Home}/>
           <Route exact path='/:slug' render={() => (
             <div>
-              {"this.handleRedirectFromTextBlasts(this.props.location.pathname, "redirect")"}
+              {this.handleRedirectFromTextBlasts(this.props.location.pathname, "redirect")}
             </div>
           )}/>
           <Route path='/subscribe/:slug' component={Subscribe}/>
