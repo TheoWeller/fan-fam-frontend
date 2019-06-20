@@ -27,7 +27,7 @@ class FanbaseStats extends Component {
    }
 
   render(){
-    const url = `http://fan-fam-backend.herokuapp.com/subscribe/${this.props.slug}`//FOR COMPYING TO CLIPBOARD
+    const url = `http://fan-fam.herokuapp.com/subscribe/${this.props.slug}`//FOR COMPYING TO CLIPBOARD
     return (
       <div id="fanbase-stats">
         <Grid centered divided inverted columns='equal'>
@@ -51,7 +51,7 @@ class FanbaseStats extends Component {
                   data-clipboard-action="copy"
                   onClick={() => this.copySubscriptionLink}
                 >
-                  <Button.Content visible>{`http://fan-fam-backend.herokuapp.com/subscribe/${this.props.slug}`}</Button.Content>
+                  <Button.Content visible>{`http://fan-fam.herokuapp.com/subscribe/${this.props.slug}`}</Button.Content>
                   <Button.Content hidden>Click to copy...</Button.Content>
                 <Icon name='copy'/>
                 </Button>
